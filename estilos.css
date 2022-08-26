@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{ /* # selector para identificador*/
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+
+}
+
+header{
+    background: red;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;/*centrara al cento de la caja*/
+    color: white;
+    border-bottom: 3px dashed black;
+    
+}
+
+nav{
+    background: lightblue;
+    height: 50px; /*hay que darle altura para que se vea*/
+    line-height: 30px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    float: left;
+    list-style: none; /*quitar estilos por defeto*/
+    margin: 10px;
+
+}
+
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    background: green;
+    min-height: 500px;
+    padding: 40px;
+}
+
+
+
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.article:first-child{
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 20px); /*con calc restamos 10 px de padding por cada lado para que no se nos baje y quede ajustado*/
+    background: orange;
+    min-height: 500px;
+    padding: 10px;/*Margen interior*/
+    padding-top: 10px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
